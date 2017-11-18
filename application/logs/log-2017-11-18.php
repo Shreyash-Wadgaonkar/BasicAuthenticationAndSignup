@@ -71,3 +71,33 @@ ERROR - 2017-11-18 12:28:43 --> Query error: Unknown column 'Array' in 'where cl
 FROM `users`
 WHERE `email` = `Array`
 ERROR - 2017-11-18 12:49:44 --> 404 Page Not Found: Home/index
+ERROR - 2017-11-18 13:54:28 --> Could not find the language line "meta_title"
+ERROR - 2017-11-18 13:54:28 --> Could not find the language line "meta_description"
+ERROR - 2017-11-18 13:54:28 --> Could not find the language line "text_username"
+ERROR - 2017-11-18 13:54:28 --> Could not find the language line "text_password"
+ERROR - 2017-11-18 13:55:26 --> Could not find the language line "meta_title"
+ERROR - 2017-11-18 13:55:26 --> Could not find the language line "meta_description"
+ERROR - 2017-11-18 13:55:26 --> Could not find the language line "text_username"
+ERROR - 2017-11-18 13:55:26 --> Could not find the language line "text_password"
+ERROR - 2017-11-18 13:55:59 --> Could not find the language line "meta_title"
+ERROR - 2017-11-18 13:55:59 --> Could not find the language line "meta_description"
+ERROR - 2017-11-18 13:55:59 --> Could not find the language line "text_username"
+ERROR - 2017-11-18 13:56:00 --> Could not find the language line "text_password"
+ERROR - 2017-11-18 13:56:15 --> Could not find the language line "meta_title"
+ERROR - 2017-11-18 13:56:15 --> Could not find the language line "meta_description"
+ERROR - 2017-11-18 13:56:15 --> Could not find the language line "text_username"
+ERROR - 2017-11-18 13:56:15 --> Could not find the language line "text_password"
+ERROR - 2017-11-18 13:57:28 --> Severity: Error --> Call to undefined method CI_Loader::lang() C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 12
+ERROR - 2017-11-18 14:34:42 --> Severity: Error --> Call to undefined method LoginController::CheckUser() C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 57
+ERROR - 2017-11-18 14:35:08 --> Severity: Notice --> Undefined property: LoginController::$LoginModel C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 57
+ERROR - 2017-11-18 14:35:08 --> Severity: Error --> Call to a member function CheckUser() on null C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 57
+ERROR - 2017-11-18 14:35:30 --> Severity: Notice --> Trying to get property of non-object C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 61
+ERROR - 2017-11-18 14:35:57 --> Severity: Notice --> Trying to get property of non-object C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 61
+ERROR - 2017-11-18 14:36:03 --> Severity: Notice --> Trying to get property of non-object C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 61
+ERROR - 2017-11-18 14:36:46 --> Severity: Notice --> Trying to get property of non-object C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 61
+ERROR - 2017-11-18 14:37:12 --> Severity: Notice --> Trying to get property of non-object C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 61
+ERROR - 2017-11-18 14:37:44 --> Severity: Notice --> Trying to get property of non-object C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 61
+ERROR - 2017-11-18 14:38:19 --> Severity: Notice --> Trying to get property of non-object C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 61
+ERROR - 2017-11-18 14:38:28 --> Severity: Error --> Call to undefined function set_cookie() C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\LoginController.php 63
+ERROR - 2017-11-18 14:39:00 --> Severity: Notice --> Undefined property: HomeController::$land C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\HomeController.php 14
+ERROR - 2017-11-18 14:39:00 --> Severity: Error --> Call to a member function load() on null C:\wamp3\www\BasicAuthenticationAndSignup\application\controllers\HomeController.php 14

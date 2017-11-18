@@ -24,6 +24,7 @@ class SignupController extends CI_Controller{
         $data['menu_home']      = $this->lang->line('menu_home');
         $data['menu_signup']    = $this->lang->line('menu_signup');
         $data['menu_login']     = $this->lang->line('menu_login');
+        $data['menu_logout']     = $this->lang->line('menu_logout');
 
 
 
@@ -83,6 +84,12 @@ class SignupController extends CI_Controller{
 
             /*Check if user already registered with the email id*/
             if($this->SignUpModel->userExists($pass['email'])){
+                $this->session->set_userdata('notification',$this->lang->line('text_user_exists'));
+                redirect('signup');
+            }
+
+            /*Check if user already registered with the username */
+            if($this->SignUpModel->userNameExists($pass['username'])){
                 $this->session->set_userdata('notification',$this->lang->line('text_user_exists'));
                 redirect('signup');
             }

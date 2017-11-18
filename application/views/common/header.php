@@ -41,9 +41,16 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
-                <li><a href="<?php echo base_url()?>home"><?php echo(isset($menu_home)? $menu_home : '');?></a></li>
-                <li><a href="<?php echo base_url()?>signup"><?php echo(isset($menu_signup)? $menu_signup : '');?></a></li>
-                <li><a href="<?php echo base_url()?>login"><?php echo(isset($menu_login)? $menu_login : '');?></a></li>
+                <?php if(isset($this->session->userdata(SESSION_COOKIE)['username'])){ ?>
+                    <li><a href="<?php echo base_url()?>home"><?php echo(isset($menu_home)? $menu_home : '');?></a></li>
+                <?php } ?>
+
+                <?php if(isset($this->session->userdata(SESSION_COOKIE)['username'])){ ?>
+                    <li><a href="<?php echo base_url()?>logout"><?php echo(isset($menu_logout)? $menu_logout : '');?></a></li>
+                <?php }else{ ?>
+                    <li><a href="<?php echo base_url()?>signup"><?php echo(isset($menu_signup)? $menu_signup : '');?></a></li>
+                    <li><a href="<?php echo base_url()?>login"><?php echo(isset($menu_login)? $menu_login : '');?></a></li>
+                <?php } ?>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

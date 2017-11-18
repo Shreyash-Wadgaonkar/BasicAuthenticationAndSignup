@@ -37,4 +37,16 @@ class SignupModel extends CI_Model{
             return 0;
         }
     }
+
+
+    public function userNameExists($name){
+        $this->db->where('username',$name);
+        $result =  $this->db->get('users');
+
+        if($result->num_rows()>=1){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
 }
