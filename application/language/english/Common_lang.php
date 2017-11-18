@@ -12,6 +12,7 @@ $lang['text_home']  = 'Home';
 
 $lang['text_save_error'] ="Oops something went wrong try again later !";
 $lang['text_save_success'] ="Success";
+$lang['text_session_expired'] ="Session expired please login again!";
 
 
 $lang['menu_home']      ='Home';

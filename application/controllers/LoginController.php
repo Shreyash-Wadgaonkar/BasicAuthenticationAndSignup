@@ -24,7 +24,7 @@ class LoginController extends CI_Controller{
         $data['menu_home']          = $this->lang->line('menu_home');
         $data['menu_signup']        = $this->lang->line('menu_signup');
         $data['menu_login']         = $this->lang->line('menu_login');
-        $data['menu_logout']         = $this->lang->line('menu_logout');
+        $data['menu_logout']        = $this->lang->line('menu_logout');
 
 
 
@@ -70,6 +70,8 @@ class LoginController extends CI_Controller{
                         'lastname' =>$data[0]->lastname,
                         'gender' =>$data[0]->gender,
                         'email' =>$data[0]->email,
+                        'last_login' =>$data[0]->last_login,
+                        'ip' =>$data[0]->ip,
                         'session_id' => session_id(),
                     );
 

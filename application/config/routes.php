@@ -56,6 +56,7 @@ $route['signup/process']        = 'SignupController/signup';
 $route['login']                 = 'LoginController';
 $route['home']                  = 'HomeController';
 $route['login/process']         = 'LoginController/login';
+$route['logout']                = 'LogoutController';
 $route['migrate-now']           = 'MigrationController';
 
 $route['translate_uri_dashes'] = FALSE;

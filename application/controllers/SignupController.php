@@ -77,9 +77,9 @@ class SignupController extends CI_Controller{
                 'email'         => $this->input->post('email',TRUE),
                 'username'      => $this->input->post('username',TRUE),
                 'password'      => $hash,
-                'firstname'     => $this->input->post('username',TRUE),
-                'lastname'      => $this->input->post('username',TRUE),
-                'gender'        => $this->input->post('username',TRUE),
+                'firstname'     => $this->input->post('firstname',TRUE),
+                'lastname'      => $this->input->post('lastname',TRUE),
+                'gender'        => $this->input->post('gender',TRUE),
             );
 
             /*Check if user already registered with the email id*/
