@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+body{
+    font-family:'Lato',sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'Roboto',sans-serif;
+}
+
+.form-group{
+    margin-bottom: 20px;
+    padding: 15px 0px 15px 0px;
+}
+
+form span{
+    vertical-align: -webkit-baseline-middle;
+}
+
+.form-control,.btn{
+    border-radius: 0px;
+}
+.main-container{
+    padding:50px 0px 50px 0px;
+}
+
+.no-pad{
+    padding:0px;
+}
+small{
+    font-size:13px ! important;
+}
+.v-align-sub{
+    vertical-align: sub;
+}
+/*CUSTOM RADIO BUTTON*/
+input[type="radio"]:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #000000;
+
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background: #45c3cd;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #000000;
+    box-shadow: inset 0 0 0 2px #ffffff;
+
+}
+
+.invalid{
+    border: 1px solid #ff0000;
+}
+.field{
+    padding-bottom:5px;
+}
+.form-error{
+    color:#ff0000;
+    font-size:11px;
+   padding-bottom:2px;
+
+}
+.help-block{
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+.pad-top-6{
+    padding-top:6px;
+}
