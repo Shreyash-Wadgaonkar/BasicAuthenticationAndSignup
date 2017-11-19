@@ -9,7 +9,7 @@ class SignupController extends CI_Controller{
 
     public function  __construct(){
         parent::__construct();
-        $this->load->model('SignUpModel');
+        $this->load->model('SignupModel');
         $this->lang->load('Signup');
     }
 
@@ -83,19 +83,19 @@ class SignupController extends CI_Controller{
             );
 
             /*Check if user already registered with the email id*/
-            if($this->SignUpModel->userExists($pass['email'])){
+            if($this->SignupModel->userExists($pass['email'])){
                 $this->session->set_userdata('notification',$this->lang->line('text_user_exists'));
                 redirect('signup');
             }
 
             /*Check if user already registered with the username */
-            if($this->SignUpModel->userNameExists($pass['username'])){
+            if($this->SignupModel->userNameExists($pass['username'])){
                 $this->session->set_userdata('notification',$this->lang->line('text_user_exists'));
                 redirect('signup');
             }
 
             /*Process registration*/
-            if($this->SignUpModel->registerUser($pass)){
+            if($this->SignupModel->registerUser($pass)){
                 $this->session->set_userdata('notification',$this->lang->line('text_signup_complete'));
             }else{
                 $this->session->set_userdata('notification',$this->lang->line('text_save_error'));
